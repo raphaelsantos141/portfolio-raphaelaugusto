@@ -32,8 +32,3 @@ Se você tiver alguma dúvida ou quiser entrar em contato, sinta-se à vontade p
 - [Instagram](https://www.instagram.com/raphael.adesign?igsh=dmN6OGEzY3h6OG00)
 
 Obrigado por visitar meu portfólio! 😊
-<<<<<<< HEAD
-=======
-
-
->>>>>>> ac7e9b8907b1e468456ab2129aa9997cbec6e210
