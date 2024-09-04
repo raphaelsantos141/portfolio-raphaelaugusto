@@ -1,4 +1,4 @@
-# Meu Portfólio
+# Portfólio de Raphael Santos
 
 Bem-vindo ao meu portfólio! 🎉
 
@@ -23,21 +23,6 @@ Este é o meu portfólio pessoal, onde você pode conhecer mais sobre mim e ver 
 
 Você pode visualizar meu portfólio diretamente [aqui](https://raphaelsantos141.github.io/RaphaelAugustoPortfolio/).
 
-## Como Contribuir
-
-Sinta-se à vontade para contribuir com melhorias ou sugestões! Se você deseja fazer uma contribuição:
-
-1. **Fork** este repositório.
-2. **Clone** o seu fork localmente.
-3. **Crie uma branch** para suas alterações (`git checkout -b minha-alteracao`).
-4. **Faça commit** das suas alterações (`git commit -am 'Adiciona minha alteração'`).
-5. **Push** para o repositório remoto (`git push origin minha-alteracao`).
-6. **Abra um Pull Request** no GitHub.
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
 ## Contato
 
 Se você tiver alguma dúvida ou quiser entrar em contato, sinta-se à vontade para me enviar uma mensagem:
@@ -47,4 +32,5 @@ Se você tiver alguma dúvida ou quiser entrar em contato, sinta-se à vontade p
 - [Instagram](https://www.instagram.com/raphael.adesign?igsh=dmN6OGEzY3h6OG00)
 
 Obrigado por visitar meu portfólio! 😊
+
 
