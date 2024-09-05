@@ -11575,6 +11575,16 @@ pre .code {
   margin-top: 5%;
 }
 
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-link:hover {
+  color: #686868;
+}
+
 @media (max-width: 767.98px) {
   .header {
     height: 500px;
