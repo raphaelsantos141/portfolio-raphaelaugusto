@@ -11564,6 +11564,7 @@ pre .code {
   line-height: .7;
   margin-bottom: 25px;
   color: inherit;
+  white-space: nowrap; /* Impede a quebra de linha */
 }
 
 .header .header-content .header-mono {
@@ -11571,6 +11572,7 @@ pre .code {
   font-weight: 500;
   font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
   margin-bottom: 40px;
+  margin-top: 5%;
 }
 
 @media (max-width: 767.98px) {
