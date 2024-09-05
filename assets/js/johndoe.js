@@ -14,22 +14,24 @@
 
 // smooth scroll
 $(document).ready(function(){
-    $(".navbar .nav-link").on('click', function(event) {
+  $(".navbar .nav-link").on('click', function(event) {
+      if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
 
-        if (this.hash !== "") {
+          // Ajuste o valor de offset conforme a altura do seu cabeçalho
+          var offset = 80; // Altura do cabeçalho fixo (ajuste conforme necessário)
 
-            event.preventDefault();
-
-            var hash = this.hash;
-
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 700, function(){
-                window.location.hash = hash;
-            });
-        } 
-    });
+          $('html, body').animate({
+              scrollTop: $(hash).offset().top - offset
+          }, 700, function(){
+              window.location.hash = hash;
+          });
+      } 
+  });
 });
+
+
 
 // protfolio filters
 $(window).on("load", function() {
@@ -54,6 +56,106 @@ $(window).on("load", function() {
         }), !1
     });
 });
+
+$(document).ready(function() {
+  const projects = [
+      { img: "https://dogtowndogtraining.com/wp-content/uploads/2012/06/300x300-061-e1340955308953.jpg", 
+        title: "Teste Teste", 
+        desc: "Loja virtual desenvolvida com HTML, CSS e JavaScript, com integração ao PayPal para pagamentos.", 
+        projectLink: "https://dogtowndogtraining.com/wp-content/uploads/2012/06/300x300-061-e1340955308953.jpg", 
+        githubLink: "https://github.com/raphaelsantos141/ProgramandoViagens" },
+
+      { img: "https://via.placeholder.com/300", 
+        title: "Projeto de Site 2", 
+        desc: "Descrição do projeto 2", 
+        projectLink: "link-do-projeto2", 
+        githubLink: "https://github.com/seu-usuario/seu-repositorio2" },
+
+      { img: "https://via.placeholder.com/300", 
+        title: "Projeto de Site 3", 
+        desc: "Descrição do projeto 3", 
+        projectLink: "link-do-projeto3", 
+        githubLink: "https://github.com/seu-usuario/seu-repositorio3" },
+
+      { img: "https://via.placeholder.com/300", 
+        title: "Projeto de Site 4", 
+        desc: "Descrição do projeto 4", 
+        projectLink: "link-do-projeto4", 
+        githubLink: "https://github.com/seu-usuario/seu-repositorio4" },
+
+      { img: "https://via.placeholder.com/300", 
+        title: "Projeto de Site 5", 
+        desc: "Descrição do projeto 5", 
+        projectLink: "link-do-projeto5", 
+        githubLink: "https://github.com/seu-usuario/seu-repositorio5" },
+
+      { img: "https://via.placeholder.com/300", 
+        title: "Projeto de Site 6", 
+        desc: "Descrição do projeto 6", 
+        projectLink: "link-do-projeto6", 
+        githubLink: "https://github.com/seu-usuario/seu-repositorio6" },
+
+      { img: "https://via.placeholder.com/300", 
+        title: "Projeto de Site 7", 
+        desc: "Descrição do projeto 7", 
+        projectLink: "link-do-projeto7", 
+        githubLink: "https://github.com/seu-usuario/seu-repositorio7" },
+
+      { img: "https://via.placeholder.com/300", 
+        title: "Projeto de Site 8", 
+        desc: "Descrição do projeto 8", 
+        projectLink: "link-do-projeto8", 
+        githubLink: "https://github.com/seu-usuario/seu-repositorio8" },
+        
+      // Adicione mais projetos conforme necessário
+  ];
+
+  const projectsPerPage = 6;
+  let currentPage = 0;
+
+  function renderProjects() {
+      const start = currentPage * projectsPerPage;
+      const end = start + projectsPerPage;
+      const projectsToShow = projects.slice(start, end);
+
+      $('#portfolio-grid').empty();
+
+      projectsToShow.forEach(project => {
+          $('#portfolio-grid').append(`
+              <div class="project">
+                  <img src="${project.img}" alt="${project.title}">
+                  <div class="project-info">
+                      <h3>${project.title}</h3>
+                      <p>${project.desc}</p>
+                      <div class="project-buttons">
+                          <a href="${project.projectLink}" target="_blank" class="btn">Ver Projeto</a>
+                          <a href="${project.githubLink}" target="_blank" class="btn github"><i class="fab fa-github"></i></a>
+                      </div>
+                  </div>
+              </div>
+          `);
+      });
+  }
+
+  $('#prev-button').on('click', function() {
+      if (currentPage > 0) {
+          currentPage--;
+          renderProjects();
+      }
+  });
+
+  $('#next-button').on('click', function() {
+      if ((currentPage + 1) * projectsPerPage < projects.length) {
+          currentPage++;
+          renderProjects();
+      }
+  });
+
+  // Render initial set of projects
+  renderProjects();
+});
+
+
 
 //Imprimir Curriculo
 document.getElementById('printButton').addEventListener('click', function() {

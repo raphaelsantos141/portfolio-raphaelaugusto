@@ -9,6 +9,7 @@
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery -->
 
     <!-- Bootstrap + JohnDoe main styles -->
 	<link rel="stylesheet" href="assets/css/johndoe.css">
@@ -61,11 +62,11 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
                     <li class="nav-item last-item">
                         <a href="#contact" class="nav-link">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
                     </li>
                 </ul>
             </div>
@@ -174,9 +175,9 @@
                             <P>Técnico em Mecatrônica</P>
                             <P class="subtitle"> Formação técnica focada na integração de sistemas mecânicos, eletrônicos e de controle. O curso ensina a projetar, implementar e manter sistemas automatizados e robóticos, com habilidades em programação, manutenção e otimização de processos industriais.</P>
                             <hr>
-                            <h6 class="title text-danger">2015 - 2016</h6>
-                            <P>High School Degree</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
+                            <h6 class="title text-danger">2018 - 2018</h6>
+                            <P>Curso Básico de Arduino</P>
+                            <P class="subtitle">Curso introdutório sobre Arduino, cobrindo conceitos básicos de eletrônica e programação para criação de projetos interativos com sensores e atuadores.</P>
                             
                         </div>
                     </div>
@@ -373,8 +374,8 @@
     </section>
 -->
    
-    <section class="section bg-dark py-5">
-        <div class="container text-center">
+    <section class="section bg-dark py-5" id="contact">
+        <div class="container text-center" >
             <h2 class="text-light mb-5 font-weight-normal">Estou disponível para FreeLancer!</h2>
             <a href="https://wa.me/5511998157683?text=Olá%2C%20tenho%20interesse%20nos%20seus%20serviços!" 
        class="btn-whatsapp w-lg" 
@@ -384,190 +385,24 @@
         </div>
     </section>
 
-    <!-- Portfolio Section 
+    <!--
     <section class="section bg-custom-gray" id="portfolio">
         <div class="container">
-            <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
-            <div class="portfolio">
-                <div class="filters">
-                    <a href="#" data-filter=".new" class="active">
-                        New
-                    </a>
-                    <a href="#" data-filter=".advertising">
-                        Advertising
-                    </a>
-                    <a href="#" data-filter=".branding">
-                        Branding
-                    </a>
-                    <a href="#" data-filter=".web">
-                        Web
-                    </a>
-                </div>
-                <div class="portfolio-container"> 
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>   
-                        </div>             
-                    </div>
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div> 
-                        </div>                         
-                    </div>
-                    <div class="col-md-6 col-lg-4 advertising new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSTISING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>    
-                        </div>              
-                    </div> 
-                    <div class="col-md-6 col-lg-4 web">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-4.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                     
-                    </div>
+          <h1 class="mb-5"><span class="text-danger">Meu</span> Portfolio</h1>
+          <div class="portfolio-grid" id="portfolio-grid">
 
-                    <div class="col-md-6 col-lg-4 advertising"> 
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSITING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                       
-                    </div> 
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
-                           <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                     
-                    </div>
-                    <div class="col-md-6 col-lg-4 advertising new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
-                           <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSITING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                       
-                    </div> 
-                    <div class="col-md-6 col-lg-4 advertising new"> 
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-4.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERTISING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>
-                                
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div> 
-                        </div>
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                     
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                    
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                      
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-4.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                      
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-5.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">          
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-5.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                   
-                    </div>
-                </div> 
-            </div>  
-        </div>            
-    </section>
-    End of portfolio section -->
+            Projetos serão inseridos dinamicamente aqui
+          </div>
+          <br><br><br>
+         
+          <div class="pagination">
+            <button id="prev-button" class="btn btn-outline-danger">Página Anterior</button>
+            <button id="next-button" class="btn btn-outline-danger">Página Seguinte</button>
+          </div>
+        </div>
+      </section>
     
+    -->
 <!---
     <section class="section" id="blog">
         <div class="container">
