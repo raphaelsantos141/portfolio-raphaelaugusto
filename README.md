@@ -21,7 +21,7 @@ Este é o meu portfólio pessoal, onde você pode conhecer mais sobre mim e ver 
 
 ## Como Acessar
 
-Você pode visualizar meu portfólio diretamente [aqui](https://raphaelsantos141.github.io/portfolio-raphaelaugusto/).
+Você pode visualizar meu portfólio diretamente [aqui](https://raphaelaugusto.vercel.app).
 
 ## Contato
 
