@@ -61,13 +61,13 @@ $(document).ready(function() {
   const projects = [
     { img: "assets/imgs/portifolio/prog_viagens1.png", 
       title: "Programando Viagens V1", 
-      desc: "Este projeto foi desenvolvido como parte do primeiro semestre do curso de Análise e Desenvolvimento de Sistemas, Turma A Noturno. O objetivo é criar um site para planejamento e organização de viagens.", 
+      desc: "Desenvolvido como parte do primeiro semestre do curso de Análise e Desenvolvimento de Sistemas, Turma A Noturno. O objetivo é criar um site para planejamento e organização de viagens.", 
       projectLink: "https://programandoviagens.vercel.app", 
       githubLink: "https://github.com/raphaelsantos141/ProgramandoViagens" },
 
       { img: "assets/imgs/portifolio/acrilwoodind.png", 
         title: "Acrilwood Ind", 
-        desc: "Este projeto foi criado como uma iniciativa pessoal para colocar em prática HTML, CSS e JavaScript. A partir de um template pré-existente, explorei como cada parte funcionava e personalizei a interface para torná-la mais agradável e funcional.", 
+        desc: "Criado como uma iniciativa pessoal para a empresa onde trabalho para colocar em prática HTML, CSS e JavaScript. A partir de um template pré-existente, explorei como cada parte funcionava e personalizei a interface para torná-la mais agradável e funcional.", 
         projectLink: "https://acrilwoodind.vercel.app", 
         githubLink: "https://github.com/raphaelsantos141/Acrilwood-Ind" },
 
