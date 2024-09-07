@@ -59,53 +59,19 @@ $(window).on("load", function() {
 
 $(document).ready(function() {
   const projects = [
-      { img: "https://dogtowndogtraining.com/wp-content/uploads/2012/06/300x300-061-e1340955308953.jpg", 
-        title: "Teste Teste", 
-        desc: "Loja virtual desenvolvida com HTML, CSS e JavaScript, com integração ao PayPal para pagamentos.", 
-        projectLink: "https://dogtowndogtraining.com/wp-content/uploads/2012/06/300x300-061-e1340955308953.jpg", 
-        githubLink: "https://github.com/raphaelsantos141/ProgramandoViagens" },
+    { img: "assets/imgs/portifolio/prog_viagens1.png", 
+      title: "Programando Viagens V1", 
+      desc: "Este projeto foi desenvolvido como parte do primeiro semestre do curso de Análise e Desenvolvimento de Sistemas, Turma A Noturno. O objetivo é criar um site para planejamento e organização de viagens.", 
+      projectLink: "https://programandoviagens.vercel.app", 
+      githubLink: "https://github.com/raphaelsantos141/ProgramandoViagens" },
 
-      { img: "https://via.placeholder.com/300", 
-        title: "Projeto de Site 2", 
-        desc: "Descrição do projeto 2", 
-        projectLink: "link-do-projeto2", 
-        githubLink: "https://github.com/seu-usuario/seu-repositorio2" },
+      { img: "assets/imgs/portifolio/acrilwoodind.png", 
+        title: "Acrilwood Ind", 
+        desc: "Este projeto foi criado como uma iniciativa pessoal para colocar em prática HTML, CSS e JavaScript. A partir de um template pré-existente, explorei como cada parte funcionava e personalizei a interface para torná-la mais agradável e funcional.", 
+        projectLink: "https://acrilwoodind.vercel.app", 
+        githubLink: "https://github.com/raphaelsantos141/Acrilwood-Ind" },
 
-      { img: "https://via.placeholder.com/300", 
-        title: "Projeto de Site 3", 
-        desc: "Descrição do projeto 3", 
-        projectLink: "link-do-projeto3", 
-        githubLink: "https://github.com/seu-usuario/seu-repositorio3" },
 
-      { img: "https://via.placeholder.com/300", 
-        title: "Projeto de Site 4", 
-        desc: "Descrição do projeto 4", 
-        projectLink: "link-do-projeto4", 
-        githubLink: "https://github.com/seu-usuario/seu-repositorio4" },
-
-      { img: "https://via.placeholder.com/300", 
-        title: "Projeto de Site 5", 
-        desc: "Descrição do projeto 5", 
-        projectLink: "link-do-projeto5", 
-        githubLink: "https://github.com/seu-usuario/seu-repositorio5" },
-
-      { img: "https://via.placeholder.com/300", 
-        title: "Projeto de Site 6", 
-        desc: "Descrição do projeto 6", 
-        projectLink: "link-do-projeto6", 
-        githubLink: "https://github.com/seu-usuario/seu-repositorio6" },
-
-      { img: "https://via.placeholder.com/300", 
-        title: "Projeto de Site 7", 
-        desc: "Descrição do projeto 7", 
-        projectLink: "link-do-projeto7", 
-        githubLink: "https://github.com/seu-usuario/seu-repositorio7" },
-
-      { img: "https://via.placeholder.com/300", 
-        title: "Projeto de Site 8", 
-        desc: "Descrição do projeto 8", 
-        projectLink: "link-do-projeto8", 
-        githubLink: "https://github.com/seu-usuario/seu-repositorio8" },
         
       // Adicione mais projetos conforme necessário
   ];
