@@ -12884,7 +12884,7 @@ pre .code {
 }
 
 .header {
-  position: relative;
+  position:relative;
   height: 80vh;
   min-height: 600px;
   background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
@@ -12899,8 +12899,7 @@ pre .code {
 .header .container {
   position: relative;
   height: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+
 }
 
 .header .header-content {
