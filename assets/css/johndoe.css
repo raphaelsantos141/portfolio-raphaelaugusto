@@ -12646,6 +12646,12 @@ p {
   margin: 0 15px 30px;
 }
 
+.technologies {
+  font-size: calc(13px +(14 - 13)*((100vw - 300px) /(1300 - 300)));
+  opacity: .8;
+  color: #444;
+}
+
 .blog-card .img-holder {
   min-width: 350px;
   max-width: 350px;

@@ -30,102 +30,102 @@ $(document).ready(function () {
     }
   });
 });
-
+/*
 //Blog mostrar projetos
 const posts = [
   {
-     title: "Vaso Sanitário Automatizado",
-     image: "assets/imgs/blog1.jpg",
-     content: "Projeto de vaso sanitário automatizado com Arduino que utiliza sensores para levantar a tampa e acionar a descarga automaticamente, proporcionando maior conveniência e higiene.",
-     link: "projeto1.html",
-     date: "2018-12-01",
-     tecnologias: ["Arduino"]
-   },
-   {
-     title: "Projeto 2",
-     image: "assets/imgs/blog2.jpg",
-     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-     link: "projeto2.html",
-     date: "2023-08-10",
-     tecnologias: ["PHP"]
-   },
-   {
-     title: "Projeto 3",
-     image: "assets/imgs/blog3.jpg",
-     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-     link: "projeto3.html",
-     date: "2023-07-05",
-     tecnologias: ["Python"]
-   },
-   {
-     title: "Projeto 4",
-     image: "assets/imgs/branding-1.jpg",
-     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-     link: "projeto4.html",
-     date: "2023-06-25",
-     tecnologias: ["Arduino", "HTML"]
-   },
-   {
-     title: "Projeto 5",
-     image: "assets/imgs/branding-2.jpg",
-     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-     link: "projeto5.html",
-     date: "2023-05-30",
-     tecnologias: ["Python"]
-   },
-   {
-     title: "Projeto 6",
-     image: "assets/imgs/branding-3.jpg",
-     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-     link: "projeto6.html",
-     date: "2023-04-12",
-     tecnologias: ["HTML"]
-   }
- ];
- 
- const postsPerPage = 3; // Definindo 3 postagens por página
- let currentPage = 1; // Iniciando na página 1
- 
- function sortPostsByDate() {
-   posts.sort((a, b) => new Date(b.date) - new Date(a.date)); // Classifica do mais recente para o mais antigo
- }
- 
- function filterByTechnology() {
-   const checkedTechs = Array.from(document.querySelectorAll('#technologyFilter input:checked'))
-                             .map(checkbox => checkbox.value);
- 
-   let filteredPosts = posts;
-   if (checkedTechs.length > 0) {
-     filteredPosts = posts.filter(post => 
-       checkedTechs.every(tech => post.tecnologias.includes(tech))
-     );
-   } else {
-     // Se nenhum filtro estiver selecionado, não aplicar filtragem
-     filteredPosts = posts;
-   }
- 
-   // Ajusta a página atual se necessário
-   const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
-   if (currentPage > totalPages) {
-     currentPage = 1; // Redefine a página atual para 1 se a página atual for maior que o total de páginas disponíveis
-   }
- 
-   // Atualiza a renderização com os posts filtrados
-   renderPosts(filteredPosts);
-   renderPagination(filteredPosts);
- }
- 
- function renderPosts(filteredPosts = posts) { // Use posts filtrados ou todos
-   const blogPosts = document.getElementById('blog-posts');
-   blogPosts.innerHTML = ""; // Limpa o conteúdo existente
- 
-   const start = (currentPage - 1) * postsPerPage;
-   const end = start + postsPerPage;
-   const paginatedPosts = filteredPosts.slice(start, end);
- 
-   // Renderiza as postagens na página atual
-   paginatedPosts.forEach(post => {
-     const postHtml = `
+    title: "Vaso Sanitário Automatizado",
+    image: "assets/imgs/blog1.jpg",
+    content: "Projeto de vaso sanitário automatizado com Arduino que utiliza sensores para levantar a tampa e acionar a descarga automaticamente, proporcionando maior conveniência e higiene.",
+    link: "projeto1.html",
+    date: "2018-12-01",
+    tecnologias: ["Arduino"]
+  },
+  {
+    title: "Projeto 2",
+    image: "assets/imgs/blog2.jpg",
+    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    link: "projeto2.html",
+    date: "2023-08-10",
+    tecnologias: ["PHP"]
+  },
+  {
+    title: "Projeto 3",
+    image: "assets/imgs/blog3.jpg",
+    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    link: "projeto3.html",
+    date: "2023-07-05",
+    tecnologias: ["Python"]
+  },
+  {
+    title: "Projeto 4",
+    image: "assets/imgs/branding-1.jpg",
+    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    link: "projeto4.html",
+    date: "2023-06-25",
+    tecnologias: ["Arduino", "HTML"]
+  },
+  {
+    title: "Projeto 5",
+    image: "assets/imgs/branding-2.jpg",
+    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    link: "projeto5.html",
+    date: "2023-05-30",
+    tecnologias: ["Python"]
+  },
+  {
+    title: "Projeto 6",
+    image: "assets/imgs/branding-3.jpg",
+    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    link: "projeto6.html",
+    date: "2023-04-12",
+    tecnologias: ["HTML"]
+  }
+];
+
+const postsPerPage = 3; // Definindo 3 postagens por página
+let currentPage = 1; // Iniciando na página 1
+
+function sortPostsByDate() {
+  posts.sort((a, b) => new Date(b.date) - new Date(a.date)); // Classifica do mais recente para o mais antigo
+}
+
+function filterByTechnology() {
+  const checkedTechs = Array.from(document.querySelectorAll('#technologyFilter input:checked'))
+    .map(checkbox => checkbox.value);
+
+  let filteredPosts = posts;
+  if (checkedTechs.length > 0) {
+    filteredPosts = posts.filter(post =>
+      checkedTechs.every(tech => post.tecnologias.includes(tech))
+    );
+  } else {
+    // Se nenhum filtro estiver selecionado, não aplicar filtragem
+    filteredPosts = posts;
+  }
+
+  // Ajusta a página atual se necessário
+  const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
+  if (currentPage > totalPages) {
+    currentPage = 1; // Redefine a página atual para 1 se a página atual for maior que o total de páginas disponíveis
+  }
+
+  // Atualiza a renderização com os posts filtrados
+  renderPosts(filteredPosts);
+  renderPagination(filteredPosts);
+}
+
+function renderPosts(filteredPosts = posts) { // Use posts filtrados ou todos
+  const blogPosts = document.getElementById('blog-posts');
+  blogPosts.innerHTML = ""; // Limpa o conteúdo existente
+
+  const start = (currentPage - 1) * postsPerPage;
+  const end = start + postsPerPage;
+  const paginatedPosts = filteredPosts.slice(start, end);
+
+  // Renderiza as postagens na página atual
+  paginatedPosts.forEach(post => {
+    const postHtml = `
            <div class="blog-card">
                <div class="img-holder">
                    <img src="${post.image}" alt="${post.title}">
@@ -136,46 +136,50 @@ const posts = [
                   </h6>
                    <p>${post.content}</p>
                    <a href="${post.link}" class="read-more">Veja mais <i class="ti-angle-double-right"></i></a>
+
+                    <div class="technologies">
+        #${post.tecnologias.map(tech => `<span class="tech-tag">${tech}</span>`).join(', ')}
+      </div>
                </div>
            </div>
        `;
-     blogPosts.innerHTML += postHtml;
-   });
- }
- 
- function renderPagination(filteredPosts = posts) { // Use posts filtrados ou todos
-   const pagination = document.getElementById('pagination');
-   pagination.innerHTML = ""; // Limpa a paginação atual
- 
-   const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
- 
-   // Cria botões de paginação
-   for (let i = 1; i <= totalPages; i++) {
-     const pageButton = document.createElement('button');
-     pageButton.innerText = i;
-     pageButton.classList.add('page-btn');
-     if (i === currentPage) {
-       pageButton.classList.add('active');
-     }
-     pageButton.addEventListener('click', () => {
-       currentPage = i;
-       renderPosts(filteredPosts);
-       renderPagination(filteredPosts);
-     });
-     pagination.appendChild(pageButton);
-   }
- }
- 
- // Adiciona eventos de mudança para os checkboxes
- document.querySelectorAll('#technologyFilter input').forEach(checkbox => {
-   checkbox.addEventListener('change', filterByTechnology);
- });
- 
- // Inicializa a primeira página e a paginação
- sortPostsByDate(); // Ordena os posts por data antes de renderizar
- renderPosts();
- renderPagination();
- 
+    blogPosts.innerHTML += postHtml;
+  });
+}
+
+function renderPagination(filteredPosts = posts) { // Use posts filtrados ou todos
+  const pagination = document.getElementById('pagination');
+  pagination.innerHTML = ""; // Limpa a paginação atual
+
+  const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
+
+  // Cria botões de paginação
+  for (let i = 1; i <= totalPages; i++) {
+    const pageButton = document.createElement('button');
+    pageButton.innerText = i;
+    pageButton.classList.add('page-btn');
+    if (i === currentPage) {
+      pageButton.classList.add('active');
+    }
+    pageButton.addEventListener('click', () => {
+      currentPage = i;
+      renderPosts(filteredPosts);
+      renderPagination(filteredPosts);
+    });
+    pagination.appendChild(pageButton);
+  }
+}
+
+// Adiciona eventos de mudança para os checkboxes
+document.querySelectorAll('#technologyFilter input').forEach(checkbox => {
+  checkbox.addEventListener('change', filterByTechnology);
+});
+
+// Inicializa a primeira página e a paginação
+sortPostsByDate(); // Ordena os posts por data antes de renderizar
+renderPosts();
+renderPagination();
+
 
 // portfolio filters
 $(window).on("load", function () {
