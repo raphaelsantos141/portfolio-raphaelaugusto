@@ -179,8 +179,8 @@ document.querySelectorAll('#technologyFilter input').forEach(checkbox => {
 sortPostsByDate(); // Ordena os posts por data antes de renderizar
 renderPosts();
 renderPagination();
-*/
 
+*/
 // portfolio filters
 $(window).on("load", function () {
   var t = $(".portfolio-container");
