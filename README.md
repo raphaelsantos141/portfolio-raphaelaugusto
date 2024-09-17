@@ -11,7 +11,7 @@ Este é o meu portfólio pessoal, onde você pode conhecer mais sobre mim e ver 
 - **JavaScript**: Interatividade e funcionalidades adicionais.
 - **Outras Ferramentas**:
   - **Font Awesome**: Ícones para melhorar a interface.
-  - **GitHub Pages**: Hospedagem do site.
+  - **Vercel**: Hospedagem do site.
 
 ## Funcionalidades
 
