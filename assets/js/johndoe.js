@@ -34,9 +34,9 @@ $(document).ready(function () {
 //Blog mostrar projetos
 const posts = [
   {
-    title: "Vaso Sanitário Automatizado",
+    title: "Projeto TCC : Vaso Sanitário Automatizado",
     image: "assets/imgs/projetos/vasosanitario/thumb.jpg",
-    content: "Projeto de vaso sanitário automatizado com Arduino que utiliza sensores para levantar a tampa e acionar a descarga automaticamente, proporcionando maior conveniência e higiene.",
+    content: "Projeto final de TCC para o curso Técnico de Mecatrônica, vaso sanitário automatizado com Arduino que utiliza sensores para levantar a tampa e acionar a descarga automaticamente, proporcionando maior conveniência e higiene.",
     link: "00-vasosanitario.html",
     date: "2018-12-01",
     tecnologias: ["Arduino"]
