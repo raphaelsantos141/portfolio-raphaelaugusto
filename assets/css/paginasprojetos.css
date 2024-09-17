@@ -255,6 +255,12 @@ caption {
   caption-side: bottom;
 }
 
+.btn-projects{
+  text-align: center; /* Centraliza o conteúdo dentro da div */
+  margin-top: 20px; /* Adiciona um pouco de espaço acima da div, opcional */
+
+}
+
 .btn-whatsapp {
   background-color: rgb(10, 34, 53);
   /* Cor de fundo padrão do botão */
