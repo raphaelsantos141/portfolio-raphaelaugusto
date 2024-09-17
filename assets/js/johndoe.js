@@ -30,56 +30,16 @@ $(document).ready(function () {
     }
   });
 });
-/* 
+
 //Blog mostrar projetos
 const posts = [
   {
     title: "Vaso Sanitário Automatizado",
-    image: "assets/imgs/blog1.jpg",
+    image: "assets/imgs/projetos/vasosanitario/thumb.png",
     content: "Projeto de vaso sanitário automatizado com Arduino que utiliza sensores para levantar a tampa e acionar a descarga automaticamente, proporcionando maior conveniência e higiene.",
-    link: "projeto1.html",
+    link: "00-vasosanitario.html",
     date: "2018-12-01",
     tecnologias: ["Arduino"]
-  },
-  {
-    title: "Projeto 2",
-    image: "assets/imgs/blog2.jpg",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    link: "projeto2.html",
-    date: "2023-08-10",
-    tecnologias: ["PHP"]
-  },
-  {
-    title: "Projeto 3",
-    image: "assets/imgs/blog3.jpg",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    link: "projeto3.html",
-    date: "2023-07-05",
-    tecnologias: ["Python"]
-  },
-  {
-    title: "Projeto 4",
-    image: "assets/imgs/branding-1.jpg",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    link: "projeto4.html",
-    date: "2023-06-25",
-    tecnologias: ["Arduino", "HTML"]
-  },
-  {
-    title: "Projeto 5",
-    image: "assets/imgs/branding-2.jpg",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    link: "projeto5.html",
-    date: "2023-05-30",
-    tecnologias: ["Python"]
-  },
-  {
-    title: "Projeto 6",
-    image: "assets/imgs/branding-3.jpg",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    link: "projeto6.html",
-    date: "2023-04-12",
-    tecnologias: ["HTML"]
   }
 ];
 
@@ -180,7 +140,7 @@ sortPostsByDate(); // Ordena os posts por data antes de renderizar
 renderPosts();
 renderPagination();
 
-*/
+
 // portfolio filters
 $(window).on("load", function () {
   var t = $(".portfolio-container");
