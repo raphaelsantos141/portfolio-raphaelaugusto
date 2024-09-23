@@ -117,6 +117,13 @@ p {
   border: none; /* Remove a borda do iframe */
 }
 
+.video-final {
+  width: 100%; /* Faz com que o vídeo ocupe 100% da largura do contêiner pai */
+  height: 498pt; /* Ajuste a altura conforme necessário */
+  max-width: 100%; /* Garante que o vídeo não ultrapasse a largura do contêiner pai */
+  border: none; /* Remove a borda do iframe */
+}
+
 
 abbr[title],
 abbr[data-original-title] {

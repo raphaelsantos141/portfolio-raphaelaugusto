@@ -40,6 +40,14 @@ const posts = [
     link: "00-vasosanitario.html",
     date: "2018-12-01",
     tecnologias: ["Arduino"]
+  },
+  {
+    title: "Projeto Site: Acrilwood Ind",
+    image: "assets/imgs/projetos/acrilwoodind/thumb.jpg",
+    content: "Site da Acilwood Ind: uma plataforma moderna desenvolvida com HTML, CSS e JavaScript, destacando a excelência em madeira e produtos.",
+    link: "00-acrilwoodind.html",
+    date: "2024-09-01",
+    tecnologias: ["HTML", "Javascript"]
   }
 ];
 
