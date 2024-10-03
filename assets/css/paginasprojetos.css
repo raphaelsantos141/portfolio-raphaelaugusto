@@ -114,6 +114,7 @@ p {
   display: flex;
   justify-content: space-around; /* Espaço entre os itens */
   align-items: center; /* Alinha verticalmente */
+  max-width: 100%;
 }
 .logo {
   text-align: center; /* Centraliza o texto abaixo da imagem */
