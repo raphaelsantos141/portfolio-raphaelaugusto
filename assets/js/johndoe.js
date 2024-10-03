@@ -50,11 +50,11 @@ const posts = [
     tecnologias: ["HTML", "Javascript"]
   },
   {
-    title: "Projeto Site: Acrilwood Ind",
-    image: "assets/imgs/projetos/acrilwoodind/thumb.jpg",
-    content: "Site da Acilwood Ind: uma plataforma moderna desenvolvida com HTML, CSS e JavaScript, destacando a excelência em madeira e produtos.",
-    link: "00-acrilwoodind.html",
-    date: "2024-09-01",
+    title: "Projeto Site: Garden Ouro Fino",
+    image: "assets/imgs/projetos/gardenourofino/thumb.png",
+    content: "Site Garden Ouro Fino: uma plataforma atrativa e funcional que destaca a variedade de flores e arranjos da floricultura, proporcionando uma experiência envolvente. ",
+    link: "00-gardenourofino.html",
+    date: "2024-10-01",
     tecnologias: ["HTML", "Javascript"]
   },
 ];
