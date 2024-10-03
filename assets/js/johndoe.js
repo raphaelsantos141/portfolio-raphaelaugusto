@@ -48,7 +48,15 @@ const posts = [
     link: "00-acrilwoodind.html",
     date: "2024-09-01",
     tecnologias: ["HTML", "Javascript"]
-  }
+  },
+  {
+    title: "Projeto Site: Acrilwood Ind",
+    image: "assets/imgs/projetos/acrilwoodind/thumb.jpg",
+    content: "Site da Acilwood Ind: uma plataforma moderna desenvolvida com HTML, CSS e JavaScript, destacando a excelência em madeira e produtos.",
+    link: "00-acrilwoodind.html",
+    date: "2024-09-01",
+    tecnologias: ["HTML", "Javascript"]
+  },
 ];
 
 const postsPerPage = 3; // Definindo 3 postagens por página

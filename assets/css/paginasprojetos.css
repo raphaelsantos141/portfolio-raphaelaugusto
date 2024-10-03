@@ -110,6 +110,15 @@ p {
   margin-bottom: 1rem;
 }
 
+.logo_floricultura {
+  display: flex;
+  justify-content: space-around; /* Espaço entre os itens */
+  align-items: center; /* Alinha verticalmente */
+}
+.logo {
+  text-align: center; /* Centraliza o texto abaixo da imagem */
+}
+
 .video-embed {
   width: 500px; /* Faz com que o vídeo ocupe 100% da largura do contêiner pai */
   height: 500px; /* Ajuste a altura conforme necessário */
