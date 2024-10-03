@@ -80,7 +80,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
-
+  overflow-x: hidden;
 }
 
 [tabindex="-1"]:focus {
@@ -804,7 +804,7 @@ pre code {
 
 @media (min-width: 576px) {
   .container {
-    max-width: 100%;
+    max-width: 540px;
   }
 }
 
