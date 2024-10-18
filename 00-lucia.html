@@ -87,62 +87,69 @@
             <div class="page-content">
                 <div class="card">
                     <div class="card-header pt-0">
-                        <h3 class="card-title mb-4">Acrilwood Ind</h3>
+                        <h3 class="card-title mb-4">LUC.IA</h3>
                         <div class="blog-media mb-4">
                             <img src="assets/imgs/blog-6.jpg" alt="" class="w-100">
-                            <a href="#" class="badge badge-primary">#HTML5 & CSS3</a>
-                            <a href="#" class="badge badge-primary">#Javascript</a>
+                            <a href="#" class="badge badge-primary">#IA</a>
+                            <a href="#" class="badge badge-primary">#Fooocus</a>
+                            <a href="#" class="badge badge-primary">#Photoshop</a>
                         </div>
                         <small class="small text-muted">
                             <a href="#" class="text-muted">Por Raphael</a>
                             <span class="px-2">·</span>
-                            <span>Setembro 2024</span>
+                            <span>Outubro 2024</span>
                         </small>
                     </div>
                     <div class="card-body border-top">
                         <p class="my-3">
-                        <p>Este projeto foi uma experiência muito bacana e nasceu de uma necessidade real. O dono da
-                            empresa solicitou que eu criasse um layout para apresentar aos novos clientes, exibindo os
-                            diversos tipos de displays e projetos feitos em acrílico e MDF. Inicialmente, seria
-                            necessário criar diversos PDFs, categorizando os displays por tipo (como Display de Vitrine,
-                            Display de Mesa, Display de Parede, etc.) e também pelo segmento de mercado de cada um.</p>
+                        <p>Sempre fui muito curioso com tudo na internet, e como sempre curti mexer com imagens, o lance
+                            de IA sempre me chamou atenção. Alguns anos atrás, começou o boom dessas IAs, principalmente
+                            as de criação de imagens. Eu lembro de passar horas no canal do MidJourney no Discord,
+                            criando imagens e ficando impressionado com o quão realista tudo parecia só usando uns
+                            prompts. Mas com o tempo, o MidJourney ficou pago, e aí acabei deixando essa curiosidade de
+                            lado.</p>
 
-                        <p>A ideia era gerar um PDF para cada tipo de display, além de outros PDFs que mostrassem esses
-                            mesmos displays separados por segmento de mercado. Isso seria bastante trabalhoso e
-                            demandaria muito tempo.</p>
+                        <p>Depois de um tempo fuçando de novo sobre IAs, descobri o <strong><a
+                            href="https://github.com/lllyasviel/Fooocus" target="_blank">Fooocus</a></strong>, que roda
+                            localmente e usa a placa de vídeo pra renderizar as imagens. Ele é baseado no <strong>Stable
+                                Diffusion</strong> (que eu também tentava usar antes, mas nunca conseguia fazer
+                            funcionar). O Fooocus tem um design bem legal, então comecei a mexer e ver tutoriais e
+                            vídeos sobre ele. Foi aí que decidi criar uma personagem fictícia. Mas, como chamá-la?
+                            Queria um nome que fizesse um trocadilho com tecnologia e IA. Foi assim que surgiu
+                            <strong>Luc.ia Turing</strong> (porque Alexia e Alexa já estavam muito manjados).
+                        </p>
 
-                        <p>Para otimizar esse processo, desenvolvi uma galeria com filtros, onde o cliente pode
-                            facilmente visualizar e filtrar os displays tanto pelo tipo quanto pelo segmento de mercado.
-                            Esse sistema não só economizou tempo, eliminando a necessidade de criar inúmeros PDFs, como
-                            também melhorou a experiência visual dos clientes ao permitir uma exibição mais interativa e
-                            agradável.</p>
+                        <p>Achei muito divertido criar imagens que fazem parecer que ela é uma pessoa real. Usei uns
+                            prompts como base, tipo esse:</p>
 
-                        <p>Ele gostou tanto da galeria que aprovou fazer o site completo!</p>
-                        <p>Apesar de não ter sido remunerado por esse trabalho, encarei o projeto como uma excelente
-                            oportunidade de aprendizado, o que foi muito positivo tanto para meu portfólio quanto para a
-                            empresa.</p>
+                        <blockquote>
+                            <p><em>beautiful 22-year-old supermodel, long blonde hair, dark gray eyes, neutral face,
+                                    detailed skin, imperfect skin, natural look, (blemish:0.8), 8k, highly
+                                    detailed.</em></p>
+                        </blockquote>
 
-                        <p><strong>Ferramentas utilizadas:</strong></p>
+                        <p>Também baixei um modelo que curti bastante pra criar personagens, o <strong><a
+                                    href="https://civitai.com/models/152525/realism-engine-sdxl" target="_blank">Realism
+                                    Engine SDXL</a></strong>.</p>
+
+                        <p>As configs que usei foram essas:</p>
                         <ul>
-                            <li><strong>HTML</strong>: Usado para estruturar o conteúdo da galeria, incluindo imagens,
-                                descrições e os filtros de exibição.</li>
-                            <li><strong>CSS</strong>: Aplicado para estilizar o layout da galeria, garantindo um design
-                                responsivo, cores e organização visual atraente.</li>
-                            <li><strong>JavaScript</strong>: Implementado para adicionar a funcionalidade de filtragem
-                                dinâmica, permitindo que os usuários filtrem os displays por tipo e segmento de mercado
-                                sem recarregar a página.</li>
-                            <li><strong>Git</strong>: Utilizado para controle de versão, facilitando o gerenciamento do
-                                projeto e o acompanhamento das mudanças no código.</li>
-                            <li><strong>Adobe Premiere</strong>: Criado o vídeo da página inicial para apresentar o
-                                site de forma impactante logo de início.</li>
-                            <li><strong>Adobe Photoshop</strong>: Usado para editar e otimizar as imagens dos displays,
-                                garantindo uma apresentação visual de alta qualidade na galeria.</li>
-                        </ul><br><br>
-                        <p><strong>Edição do Vídeo Página Inicial</strong></p>
-                        <p>Uma das principais dificuldades desse projeto foi adaptar um vídeo gravado em modo retrato
-                            para encaixá-lo de forma adequada em um site no formato paisagem. Além disso, foi necessário
-                            editar o vídeo para manter apenas as partes que mostravam a fábrica, pois esse vídeo foi
-                            gravado apresentando uma visita na fábrica.</p>
+                            <li>Face Swap (1 - 0,75 (0,572))</li>
+                            <li>PyraCanny (0,5 - 1) (a imagem base)</li>
+                            <li>No Styles</li>
+                            <li>realismEngineSDXLV30</li>
+                            <li>Seed: 6416951430797422998</li>
+                        </ul>
+
+                        <p>O Face Swap eu ajustava entre 0,572 e 0,75, dependendo da imagem, pra ficar mais realista.
+                            Depois que a imagem estava pronta no próprio programa, eu conseguia ajeitar detalhes tipo
+                            mãos e olhos deformados, mas quando precisava de um ajuste mais fino, usava o Photoshop.</p>
+
+                        <p>Tô curtindo muito essa experiência e vou continuar usando e aprimorando. Além disso, se
+                            precisar de alguma imagem pra trabalho ou faculdade, agora sei que consigo criar sem
+                            problema nenhum.</p>
+
+
                     </div>
 
                     <div class="gallery-container">

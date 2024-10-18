@@ -34,7 +34,7 @@ $(document).ready(function () {
 //Blog mostrar projetos
 const posts = [
   {
-    title: "Projeto TCC : Vaso Sanitário Automatizado",
+    title: "Projeto TCC - Vaso Sanitário Automatizado",
     image: "assets/imgs/projetos/vasosanitario/thumb.jpg",
     content: "Projeto final de TCC para o curso Técnico de Mecatrônica, vaso sanitário automatizado com Arduino que utiliza sensores para levantar a tampa e acionar a descarga automaticamente, proporcionando maior conveniência e higiene.",
     link: "00-vasosanitario.html",
@@ -42,7 +42,7 @@ const posts = [
     tecnologias: ["Arduino"]
   },
   {
-    title: "Projeto Site: Acrilwood Ind",
+    title: "Site Acrilwood Ind",
     image: "assets/imgs/projetos/acrilwoodind/thumb.jpg",
     content: "Site da Acilwood Ind: uma plataforma moderna desenvolvida com HTML, CSS e JavaScript, destacando a excelência em madeira e produtos.",
     link: "00-acrilwoodind.html",
@@ -50,12 +50,20 @@ const posts = [
     tecnologias: ["HTML", "Javascript"]
   },
   {
-    title: "Projeto Site: Garden Ouro Fino",
+    title: "Site Garden Ouro Fino",
     image: "assets/imgs/projetos/gardenourofino/thumb.png",
     content: "Site Garden Ouro Fino: uma plataforma atrativa e funcional que destaca a variedade de flores e arranjos da floricultura, proporcionando uma experiência envolvente. ",
     link: "00-gardenourofino.html",
     date: "2024-10-01",
     tecnologias: ["HTML", "Javascript"]
+  },
+  {
+    title: "IA: Lucia Turing",
+    image: "assets/imgs/projetos/lucia/thumb.png",
+    content: "Lucia Turing é uma personagem fictícia utilizando inteligência artificial, especificamente com a ferramenta Fooocus baseada no Stable Diffusion.",
+    link: "00-lucia.html",
+    date: "2024-10-18",
+    tecnologias: ["IA"]
   },
 ];
 
