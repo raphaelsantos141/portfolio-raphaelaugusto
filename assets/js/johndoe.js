@@ -66,7 +66,7 @@ const posts = [
     tecnologias: ["IA"]
   },
   {
-    title: "Jogo: Nema Izlaza",
+    title: "Jogo Nema Izlaza",
     image: "assets/imgs/projetos/nema izlaza/captura_game.jpg",
     content: "Nema Izlaza é um jogo de terror em primeira pessoa que criei onde o jogador, perdido em uma floresta escura, busca uma saída usando apenas uma lanterna. Com clima tenso e atmosfera sombria.",
     link: "00-nemaizlaza.html",
