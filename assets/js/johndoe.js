@@ -75,7 +75,7 @@ const posts = [
   },
 ];
 
-const postsPerPage = 3; // Definindo 3 postagens por página
+const postsPerPage = 5; // Definindo 5 postagens por página
 let currentPage = 1; // Iniciando na página 1
 
 function sortPostsByDate() {
