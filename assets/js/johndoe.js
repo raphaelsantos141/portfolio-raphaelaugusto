@@ -73,6 +73,14 @@ const posts = [
     date: "2014-02-24",
     tecnologias: ["Unity","C#"]
   },
+  {
+    title: "Site Programando Viagens",
+    image: "assets/imgs/projetos/programandoviagens/thumb.png",
+    content: "Este projeto foi desenvolvido como parte do primeiro e segundo semestre do curso de Análise e Desenvolvimento de Sistemas. O objetivo é criar um site para planejamento e organização de viagens.",
+    link: "00-programando_viagens.html",
+    date: "2024-07-01",
+    tecnologias: ["HTML", "Javascript","PHP"]
+  },
 ];
 
 const postsPerPage = 5; // Definindo 5 postagens por página
