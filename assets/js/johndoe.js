@@ -65,6 +65,14 @@ const posts = [
     date: "2024-10-18",
     tecnologias: ["IA"]
   },
+  {
+    title: "Jogo: Nema Izlaza",
+    image: "assets/imgs/projetos/nema izlaza/captura_game.jpg",
+    content: "Nema Izlaza é um jogo de terror em primeira pessoa que criei onde o jogador, perdido em uma floresta escura, busca uma saída usando apenas uma lanterna. Com clima tenso e atmosfera sombria.",
+    link: "00-nemaizlaza.html",
+    date: "2014-02-24",
+    tecnologias: ["Unity","C#"]
+  },
 ];
 
 const postsPerPage = 3; // Definindo 3 postagens por página
