@@ -81,6 +81,7 @@ const posts = [
     date: "2024-07-01",
     tecnologias: ["HTML", "Javascript","PHP"]
   },
+  
 ];
 
 const postsPerPage = 5; // Definindo 5 postagens por página
