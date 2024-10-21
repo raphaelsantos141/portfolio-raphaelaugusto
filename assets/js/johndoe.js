@@ -75,7 +75,7 @@ const posts = [
   },
   {
     title: "Site Programando Viagens",
-    image: "assets/imgs/projetos/nema izlaza/captura_game.jpg",
+    image: "assets/imgs/projetos/programandoviagens/programandoviagens.jpg",
     content: "Este projeto foi desenvolvido como parte do primeiro e segundo semestre do curso de Análise e Desenvolvimento de Sistemas. O objetivo é criar um site para planejamento e organização de viagens.",
     link: "00-programando_viagens.html",
     date: "2024-07-01",
