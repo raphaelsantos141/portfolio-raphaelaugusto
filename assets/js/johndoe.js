@@ -62,7 +62,7 @@ const posts = [
     image: "assets/imgs/projetos/lucia/thumb.png",
     content: "Lucia Turing é uma personagem fictícia utilizando inteligência artificial, especificamente com a ferramenta Fooocus baseada no Stable Diffusion.",
     link: "00-lucia.html",
-    date: "2024-10-18",
+    date: "2013-10-18",
     tecnologias: ["IA"]
   },
   {
