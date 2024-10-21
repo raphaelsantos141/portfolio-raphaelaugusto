@@ -71,7 +71,7 @@ const posts = [
     content: "Nema Izlaza é um jogo de terror em primeira pessoa que criei onde o jogador, perdido em uma floresta escura, busca uma saída usando apenas uma lanterna. Com clima tenso e atmosfera sombria.",
     link: "00-nemaizlaza.html",
     date: "2014-02-24",
-    tecnologias: ["Unity","C#"]
+    tecnologias: ["Unity", "C#"]
   },
   {
     title: "Site Programando Viagens",
@@ -79,7 +79,7 @@ const posts = [
     content: "Este projeto foi desenvolvido como parte do primeiro e segundo semestre do curso de Análise e Desenvolvimento de Sistemas. O objetivo é criar um site para planejamento e organização de viagens.",
     link: "00-programando_viagens.html",
     date: "2024-07-01",
-    tecnologias: ["HTML", "Javascript","PHP"]
+    tecnologias: ["HTML", "Javascript", "PHP"]
   },
   {
     title: "Claudio9",
@@ -87,7 +87,7 @@ const posts = [
     content: "A Claudio9 é uma equipe paródia de e-sports inspirada na Cloud9, com um toque de humor, criada para o Rocket League, sua estética mistura nostalgia e esportes eletrônicos!",
     link: "00-claudio9.html",
     date: "2022-09-13",
-    tecnologias: ["Blender","Design"]
+    tecnologias: ["Blender", "Design"]
   },
 
 ];
@@ -137,14 +137,14 @@ function renderPosts(filteredPosts = posts) { // Use posts filtrados ou todos
     const postHtml = `
            <div class="blog-card">
                <div class="img-holder">
-                   <img src="${post.image}" alt="${post.title}">
+                   <a href="${post.link}" target="_blank"> <img src="${post.image}" alt="${post.title}"></a>
                </div>
                <div class="content-holder">
                   <h6 class="title">
-                      <a href="${post.link}">${post.title}</a>
+                      <a href="${post.link}" target="_blank">${post.title}</a>
                   </h6>
                    <p>${post.content}</p>
-                   <a href="${post.link}" class="read-more">Veja mais <i class="ti-angle-double-right"></i></a>
+                   <a href="${post.link}" target="_blank" class="read-more">Veja mais <i class="ti-angle-double-right"></i></a>
 
                     <div class="technologies">
         #${post.tecnologias.map(tech => `<span class="tech-tag">${tech}</span>`).join(', ')}
