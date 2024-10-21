@@ -81,6 +81,14 @@ const posts = [
     date: "2024-07-01",
     tecnologias: ["HTML", "Javascript","PHP"]
   },
+  {
+    title: "Claudio9",
+    image: "assets/imgs/projetos/claudio9/logo_claudio9.PNG",
+    content: "A Claudio9 é uma equipe paródia de e-sports inspirada na Cloud9, com um toque de humor, criada para o Rocket League, sua estética mistura nostalgia e esportes eletrônicos!",
+    link: "00-claudio9.html",
+    date: "2022-09-13",
+    tecnologias: ["Blender","Design"]
+  },
 
 ];
 
