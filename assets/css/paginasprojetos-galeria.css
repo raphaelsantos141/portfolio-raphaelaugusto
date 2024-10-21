@@ -197,7 +197,6 @@ p {
   padding: 10px 15px;
   cursor: pointer;
   margin: 5px;
-  border-radius: 5px;
 }
 
 .pagination button:hover {
