@@ -116,17 +116,24 @@ p {
 
 .logo_floricultura {
   display: flex;
-  justify-content: space-around;
-  /* Espaço entre os itens */
+  flex-wrap: wrap; /* Permite que os itens quebrem em múltiplas linhas */
+  justify-content: center; /* Centraliza os itens */
   align-items: center;
-  /* Alinha verticalmente */
   max-width: 100%;
 }
 
 .logo {
-  text-align: center;
-  /* Centraliza o texto abaixo da imagem */
+  text-align: center; /* Centraliza o texto abaixo da imagem */
+  flex: 1; /* Permite que as divs ocupem o espaço disponível */
+  min-width: 200px; /* Define uma largura mínima para cada logo */
+  margin: 10px; /* Adiciona um espaço entre os logos */
 }
+
+.logo img {
+  max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
 
 .video-embed {
   width: 500px;
