@@ -122,6 +122,14 @@ p {
   max-width: 100%;
 }
 
+.etiquetas {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem em múltiplas linhas */
+  justify-content: center; /* Centraliza os itens */
+  align-items:flex-start;
+  max-width: 100%;
+}
+
 .logo {
   text-align: center; /* Centraliza o texto abaixo da imagem */
   flex: 1; /* Permite que as divs ocupem o espaço disponível */

@@ -89,6 +89,14 @@ const posts = [
     date: "2022-09-13",
     tecnologias: ["Blender", "Design"]
   },
+  {
+    title: "Automatização de Etiquetas",
+    image: "/assets/imgs/projetos/automacao_etiquetas/thumb.png",
+    content: "Este projeto foi desenvolvido para automatizar o processo de criação de etiquetas no escritório onde trabalho. A necessidade surgiu a partir da demanda de colar etiquetas em caixas de displays de acrílico e MDF, otimizando o tempo e simplificando o processo para os colaboradores.",
+    link: "00-automacao_etiquetas.html",
+    date: "2024-10-24",
+    tecnologias: ["Python"]
+  },
 
 ];
 
