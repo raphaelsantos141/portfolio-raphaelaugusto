@@ -83,7 +83,6 @@ body {
   padding: 0;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background-color: #f0f0f0;
 }
 
@@ -183,6 +182,7 @@ p {
 
 .gallery img:hover {
   transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
 .pagination {
@@ -5973,6 +5973,10 @@ input[type="button"].btn-block {
   background-clip: border-box;
   border: 0 solid transparent;
   border-radius: 0rem;
+  align-items: center;
+  /* Centraliza horizontalmente os elementos dentro do contêiner */
+  justify-content: center;
+  /* Centraliza verticalmente (opcional) */
 }
 
 .card>hr {

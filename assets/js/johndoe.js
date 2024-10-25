@@ -37,7 +37,7 @@ const posts = [
     title: "Projeto TCC - Vaso Sanitário Automatizado",
     image: "assets/imgs/projetos/vasosanitario/thumb.jpg",
     content: "Projeto final de TCC para o curso Técnico de Mecatrônica, vaso sanitário automatizado com Arduino que utiliza sensores para levantar a tampa e acionar a descarga automaticamente, proporcionando maior conveniência e higiene.",
-    link: "00-vasosanitario.html",
+    link: "/pages/00-vasosanitario.html",
     date: "2018-12-01",
     tecnologias: ["Arduino"]
   },
@@ -45,7 +45,7 @@ const posts = [
     title: "Site Acrilwood Ind",
     image: "assets/imgs/projetos/acrilwoodind/thumb.jpg",
     content: "Site da Acilwood Ind: uma plataforma moderna desenvolvida com HTML, CSS e JavaScript, destacando a excelência em madeira e produtos.",
-    link: "00-acrilwoodind.html",
+    link: "/pages/00-acrilwoodind.html",
     date: "2024-09-01",
     tecnologias: ["HTML", "Javascript"]
   },
@@ -53,7 +53,7 @@ const posts = [
     title: "Site Garden Ouro Fino",
     image: "assets/imgs/projetos/gardenourofino/thumb.png",
     content: "Site Garden Ouro Fino: uma plataforma atrativa e funcional que destaca a variedade de flores e arranjos da floricultura, proporcionando uma experiência envolvente. ",
-    link: "00-gardenourofino.html",
+    link: "/pages/00-gardenourofino.html",
     date: "2024-10-01",
     tecnologias: ["HTML", "Javascript"]
   },
@@ -61,7 +61,7 @@ const posts = [
     title: "IA: Lucia Turing",
     image: "assets/imgs/projetos/lucia/thumb.png",
     content: "Lucia Turing é uma personagem fictícia utilizando inteligência artificial, especificamente com a ferramenta Fooocus baseada no Stable Diffusion.",
-    link: "00-lucia.html",
+    link: "/pages/00-lucia.html",
     date: "2013-10-18",
     tecnologias: ["IA"]
   },
@@ -69,7 +69,7 @@ const posts = [
     title: "Jogo Nema Izlaza",
     image: "assets/imgs/projetos/nema izlaza/captura_game.jpg",
     content: "Nema Izlaza é um jogo de terror em primeira pessoa que criei onde o jogador, perdido em uma floresta escura, busca uma saída usando apenas uma lanterna. Com clima tenso e atmosfera sombria.",
-    link: "00-nemaizlaza.html",
+    link: "/pages/00-nemaizlaza.html",
     date: "2014-02-24",
     tecnologias: ["Unity", "C#"]
   },
@@ -77,7 +77,7 @@ const posts = [
     title: "Site Programando Viagens",
     image: "assets/imgs/projetos/programandoviagens/programandoviagens.jpg",
     content: "Este projeto foi desenvolvido como parte do primeiro e segundo semestre do curso de Análise e Desenvolvimento de Sistemas. O objetivo é criar um site para planejamento e organização de viagens.",
-    link: "00-programando_viagens.html",
+    link: "/pages/00-programando_viagens.html",
     date: "2024-07-01",
     tecnologias: ["HTML", "Javascript", "PHP"]
   },
@@ -85,7 +85,7 @@ const posts = [
     title: "Claudio9",
     image: "/assets/imgs/projetos/claudio9/logo_claudio9.png",
     content: "A Claudio9 é uma equipe paródia de e-sports inspirada na Cloud9, com um toque de humor, criada para o Rocket League, sua estética mistura nostalgia e esportes eletrônicos!",
-    link: "00-claudio9.html",
+    link: "/pages/00-claudio9.html",
     date: "2022-09-13",
     tecnologias: ["Blender", "Design"]
   },
@@ -93,7 +93,7 @@ const posts = [
     title: "Automatização de Etiquetas",
     image: "/assets/imgs/projetos/automacao_etiquetas/thumb.png",
     content: "Este projeto foi desenvolvido para automatizar o processo de criação de etiquetas no escritório onde trabalho. A necessidade surgiu a partir da demanda de colar etiquetas em caixas de displays de acrílico e MDF, otimizando o tempo e simplificando o processo para os colaboradores.",
-    link: "00-automacao_etiquetas.html",
+    link: "/pages/00-automacao_etiquetas.html",
     date: "2024-10-24",
     tecnologias: ["Python"]
   },
