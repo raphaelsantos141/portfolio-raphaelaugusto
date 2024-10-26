@@ -81,7 +81,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
-
+  overflow-x: hidden; /* Oculta a rolagem horizontal */
 }
 
 [tabindex="-1"]:focus {
@@ -103,6 +103,38 @@ h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   color:rgb(10, 34, 53)
+}
+
+.card-body .title a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.buttao {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #1a1a1a;
+  background-color: transparent;
+  border: 1px solid #0e0e0e;
+  border-radius: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  margin-bottom: 5pt;
+}
+.buttao:hover {
+  background-color: rgb(10, 34, 53);
+  color: white;
+}
+.buttao svg {
+  margin-left: 6px;
+  width: 12px;
+  height: 12px;
+  fill: #292929;
+}
+.buttao:hover svg {
+  fill: #ffffff;
 }
 
 p {
@@ -1506,6 +1538,14 @@ pre code {
     max-width: 50%;
   }
 
+  .col-md-25 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
   .col-md-7 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 58.33333%;
@@ -1759,6 +1799,18 @@ pre code {
     -ms-flex: 0 0 33.33333%;
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
+  }
+
+  .col-lg-25 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .col-lg-5 {
