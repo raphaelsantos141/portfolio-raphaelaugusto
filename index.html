@@ -70,7 +70,6 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav brand">
-                    <img src="assets/imgs/profile_picture.jpg" alt="" class="brand-img">
                     <li class="brand-txt">
                         <h5 class="brand-title">Raphael Augusto</h5>
                         <div class="brand-subtitle">Desenvolvedor | Designer</div>
@@ -92,36 +91,33 @@
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Quem sou eu ?</h3>
                 <span class="line mb-5"></span>
-                <h5 class="mb-3">Quem sou eu?</h5>
-                <p class="mt-20">Me chamo Raphael, tenho 25 anos possuo formação técnica em Mecatrônica pela ETEC Julio
-                    de Mesquita e atualmente estou cursando o Tecnólogo EAD em Análise e Desenvolvimento de Sistemas
-                    pela UNINOVE.</p>
-
-                <p>Aos 13 anos, comecei a me aventurar no Photoshop, inicialmente como uma brincadeira. Com o tempo,
-                    essa atividade se transformou em uma carreira como designer, permitindo-me trabalhar em diversos
-                    projetos como freelancer. Hoje, busco unir meu conhecimento técnico e habilidades criativas para
-                    enfrentar novos desafios e contribuir para projetos inovadores.</p>
-
-                <p> Desde a infância, sempre tive um interesse profundo por tecnologia, especialmente por computadores e
-                    eletrônicos, inspirado pela curiosidade do meu pai, que é técnico em informática. Essa influência me
-                    levou a estudar mecatrônica quando terminei a escola.</p>
-
-                <p>Se você está em busca de um profissional apaixonado por tecnologia e design, estou aqui para
-                    colaborar!</p>
-                <a href="assets/pdfs/Currículo_Raphael.pdf" download="Currículo_Raphael.pdf" download
-                    class="btn btn-outline-danger" target="_blank">
-                    <i class="icon-down-circled2"></i>Baixar Currículo Completo em PDF
-                </a>
+                <p class="mt-20">Sou formado em Mecatrônica pela ETEC Júlio de Mesquita
+                    e atualmente estou cursando Tecnólogo EAD em Análise e Desenvolvimento de Sistemas pela UNINOVE.</p>
+                    <p>
+                    Algumas de minhas realizações foi que recentemente, desenvolvi um projeto que transformou o catálogo
+                    de produtos de uma empresa em uma galeria interativa digital, modernizando a apresentação e
+                    facilitando a consulta para os clientes, eliminando a necessidade de múltiplos PDFs como antes
+                    proposto.</p>
+                    <p>Além disso, criei um sistema automatizado em Python para a geração de etiquetas, que antes exigia
+                    conhecimento prévio de um software de edição de imagem. Com essa automação não é mais necessário
+                    conhecimento nesse software e reduziu o tempo de criação de 15 minutos para menos de 1 minuto,
+                    aumentando a acessibilidade do processo.</p>
+                    <a href="assets/pdfs/Currículo_Raphael.pdf" download="Currículo_Raphael.pdf" download
+                        class="btn btn-outline-danger" target="_blank">
+                        <i class="icon-down-circled2"></i>Baixar Currículo Completo em PDF
+                    </a>
             </div>
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Informações Pessoais</h3>
                 <span class="line mb-5"></span>
                 <ul class="mt40 info list-unstyled">
-                    <li><span>Data de Nascimento</span> : 25/10/1999</li>
                     <li><span>Email</span> : raphael.asantos@outlook.com</li>
                     <li><span>Telefone</span> : +55 (11) 9.9815-7683</li>
-                    <li><span>Endereço</span> : Ribeirão Pires - SP - 09440-220</li>
+                    <li><span>Endereço</span> : São Paulo, Brazil</li>
                 </ul>
+                <br>
+                <h3 class="font-weight-light">Redes Sociais</h3>
+                <span class="line mb-2"></span>
                 <ul class="social-icons pt-3">
                     <li class="social-item"><a class="social-link"
                             href="https://www.facebook.com/raphaelaugustodosantos?mibextid=ZbWKwL" target="_blank"><i
@@ -172,6 +168,35 @@
         </div>
     </div>
 
+      <!--Projetos Section-->
+    <section class="section" id="blog">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">Projetos</span></h2>
+            <!-- Filtro de tecnologias -->
+            <div id="technologyFilter">
+                <h3>Filtrar por Tecnologias:</h3>
+                <label><input type="checkbox" value="HTML"> HTML5 & CSS3</label><br>
+                <label><input type="checkbox" value="Javascript"> Javascript</label><br>
+                <label><input type="checkbox" value="Python"> Python</label><br>
+                <label><input type="checkbox" value="PHP"> PHP</label><br>
+                <label><input type="checkbox" value="Arduino"> Arduino</label><br>
+                <label><input type="checkbox" value="IA"> I.A.</label><br>
+                <label><input type="checkbox" value="Unity"> Unity</label><br>
+                <label><input type="checkbox" value="C#"> C#</label><br>
+                <label><input type="checkbox" value="Blender"> Blender</label><br>
+                <label><input type="checkbox" value="Design"> Design</label><br>
+                <!-- Adicione mais checkboxes conforme necessário -->
+            </div>
+
+            <div id="blog-posts" class="blog-row">
+                <!-- As postagens do blog serão geradas dinamicamente aqui -->
+            </div>
+            <div id="pagination" class="pagination">
+                <!-- Botões de paginação serão gerados aqui -->
+            </div>
+        </div>
+    </section>
+
     <!--Resume Section-->
     <section class="section" id="resume">
         <div class="container">
@@ -195,19 +220,12 @@
                                 dos clientes.</P>
                             <hr>
                             <h6 class="title text-danger">2023 - 2024</h6>
+                            <P>Operador de Máquina de corte a laser</P>
                             <P>Desenhista Técnico</P>
                             <P>MKT PDV</P>
                             <P class="subtitle">Desenvolvi projetos em acrílicos e MDFs, planos de corte para máquinas a
                                 laser e layouts técnicos utilizando AutoCAD, Fusion 360 e CorelDRAW. Foco na precisão e
                                 eficiência para atender às especificações de produção e pedidos dos clientes.</P>
-                            <hr>
-                            <h6 class="title text-danger">2022 - 2023</h6>
-                            <P>Operador de Máquina de corte a laser</P>
-                            <P>MKT PDV</P>
-                            <P class="subtitle"> Leitura e interpretação de desenhos técnicos para configurar máquinas
-                                de corte a laser com precisão. Responsável pela configuração dos parâmetros de corte,
-                                cálculo de planos de corte otimizados e organização dos materiais, garantindo eficiência
-                                e qualidade na produção.</P>
                             <hr>
                             <h6 class="title text-danger">2022 - 2022</h6>
                             <P>Auxiliar Técnico em Campo</P>
@@ -244,15 +262,8 @@
                                 automatizados e robóticos, com habilidades em programação, manutenção e otimização de
                                 processos industriais.</P>
                             <hr>
-                            <h6 class="title text-danger">2018 - 2018</h6>
-                            <P>Curso Básico de Arduino</P>
-                            <P>ETEC Julio de Mesquita</P>
-                            <P class="subtitle">Curso introdutório sobre Arduino, cobrindo conceitos básicos de
-                                eletrônica e programação para criação de projetos interativos com sensores e atuadores.
-                            </P>
-                            <hr>
                             <h6 class="title text-danger">2015 - 2016</h6>
-                            <P>Curso Inglês </P>
+                            <P>Curso Inglês Intermediário </P>
                             <P>HELP CNI</P>
                             <P class="subtitle">aprendizado de vocabulário e gramática fundamentais, com ênfase em
                                 conversação e compreensão auditiva em situações do dia a dia.
@@ -269,78 +280,30 @@
                             </div>
                         </div>
                         <div class="card-body pb-2">
-                            <h6>HTML5 &amp; CSS3 - <p>Intermediário</p>
-                            </h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
+                            <h6>HTML5 &amp; CSS3</h6><br>
+                            
+                            <h6>JavaScript</h6><br>
+                            
+                            <h6>PHP</h6><br>
+                           
+                            <h6>Banco de Dados</h6><br>
+                            
+                            <h6>Git</h6><br>
+                            
+                            <h6>Python</h6><br>
+                            
+                            <h6>Adobe Photoshop</h6><br>
+                            
+                            <h6>Adobe Premiere</h6><br>
 
-                            <h6>JavaScript - <p>Básico</p>
-                            </h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 25%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
-                            <h6>PHP - <p>Básico</p>
-                            </h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 25%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
-                            <h6>SQL - <p>Básico</p>
-                            </h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 25%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
-                            <h6>Git - <p>Básico</p>
-                            </h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 25%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
-                            <h6>Python - <p>Básico</p>
-                            </h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 25%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
-                            <h6>Adobe Photoshop - <p>Intermediário</p>
-                            </h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
-                            <h6>Adobe Premiere - <p>Básico</p>
-                            </h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 40%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
-                            <h6>Corel Draw - <p>Intermediário</p>
-                            </h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
-                            <h6>Blender - <p>Básico</p>
-                            </h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
+                            <h6>Corel Draw</h6><br>
+                            
+                            <h6>Blender</h6><br>
+                            
+                            
                         </div>
                     </div>
+
                     <div class="card">
                         <div class="card-header">
                             <div class="pull-left">
@@ -366,61 +329,67 @@
                 </div>
 
                 <div class="container">
-                <h2 class="mb-5"><span class="text-danger">Licenças e certificados</h2>
-                <div class="row">
-                    <div class="col-md-6 col-lg-7">
-                        <div class="card">
-                            <div class="card-header">
-                            </div>
-                            <div class="card-body">
-                                <h6 class="title text-danger">
-                                    <a href="/assets/pdfs/Jornada-IA-Engenharia-de-Prompt-Certificado-Curso-em-Video.pdf"
-                                        target="_blank">JORNADA IA: ENGENHARIA DE PROMPT</a>
-                                </h6>
-                                <P>Curso em Video</P>
-                                <P>Verificação emitida em out de 2024</P>
-                                <P>Código da credencial 6B227-3CA44-5</P>
-                                <a href="/assets/pdfs/Jornada-IA-Engenharia-de-Prompt-Certificado-Curso-em-Video.pdf" target="_blank" class="buttao">
-                                    Exibir credencial
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path
-                                            d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3zm-7 7h2v7h7v2H7v-9z" />
-                                    </svg>
-                                </a>
-                                <P class="subtitle">Este curso proporcionou um entendimento abrangente da criação e
-                                    otimização de prompts para IA generativa. Com uma abordagem prática e teórica,
-                                    explorei os fundamentos e técnicas avançadas para direcionar inteligências
-                                    artificiais, como ChatGPT, com foco em melhorar a precisão e a relevância das
-                                    respostas. Entre os principais tópicos abordados estão o uso de modelos de linguagem
-                                    de grande escala, estratégias para formalização de prompts e técnicas específicas,
-                                    como o prompting de atuação e few-shot prompting. Além disso, aprimorei minhas
-                                    habilidades para estruturar prompts para aplicações práticas como geração de
-                                    e-mails, análise de textos e automação de tarefas diárias​.</P>
-                                <hr>
-                                <h6 class="title text-danger">
-                                    <a href="/assets/pdfs/Certificado_Arduino.pdf" target="_blank">Curso Básico de
-                                        Arduino</a>
+                    <h2 class="mb-5"><span class="text-danger">Licenças e certificados</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-7">
+                            <div class="card">
+                                <div class="card-header">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="title text-danger">
+                                        <a href="/assets/pdfs/Jornada-IA-Engenharia-de-Prompt-Certificado-Curso-em-Video.pdf"
+                                            target="_blank">JORNADA IA: ENGENHARIA DE PROMPT</a>
                                     </h6>
-                                <P>ETEC Júlio de Mesquita</P>
-                                <P>Verificação emitida em jun de 2018</P>
-                                <a href="/assets/pdfs/Certificado_Arduino.pdf" target="_blank" class="buttao">
-                                    Exibir credencial
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path
-                                            d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3zm-7 7h2v7h7v2H7v-9z" />
-                                    </svg>
-                                </a>
-                                <P class="subtitle">Este curso introdutório em Arduino proporcionou uma base sólida na
-                                    programação e eletrônica, usando a plataforma Arduino. Aprendi os princípios
-                                    fundamentais da linguagem de programação Arduino e sua aplicação em projetos
-                                    eletrônicos básicos. Desenvolvi habilidades práticas para montar circuitos e
-                                    programar componentes como LEDs, sensores e motores, criando projetos interativos
-                                    simples. O curso também incluiu a compreensão de esquemas eletrônicos e a resolução
-                                    de problemas, preparando-me para explorar projetos mais avançados com
-                                    microcontroladores e IoT.</P>
-                                <hr>
+                                    <P>Curso em Video</P>
+                                    <P>Verificação emitida em out de 2024</P>
+                                    <P>Código da credencial 6B227-3CA44-5</P>
+                                    <a href="/assets/pdfs/Jornada-IA-Engenharia-de-Prompt-Certificado-Curso-em-Video.pdf"
+                                        target="_blank" class="buttao">
+                                        Exibir credencial
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3zm-7 7h2v7h7v2H7v-9z" />
+                                        </svg>
+                                    </a>
+                                    <P class="subtitle">Este curso proporcionou um entendimento abrangente da criação e
+                                        otimização de prompts para IA generativa. Com uma abordagem prática e teórica,
+                                        explorei os fundamentos e técnicas avançadas para direcionar inteligências
+                                        artificiais, como ChatGPT, com foco em melhorar a precisão e a relevância das
+                                        respostas. Entre os principais tópicos abordados estão o uso de modelos de
+                                        linguagem
+                                        de grande escala, estratégias para formalização de prompts e técnicas
+                                        específicas,
+                                        como o prompting de atuação e few-shot prompting. Além disso, aprimorei minhas
+                                        habilidades para estruturar prompts para aplicações práticas como geração de
+                                        e-mails, análise de textos e automação de tarefas diárias​.</P>
+                                    <hr>
+                                    <h6 class="title text-danger">
+                                        <a href="/assets/pdfs/Certificado_Arduino.pdf" target="_blank">Curso Básico de
+                                            Arduino</a>
+                                    </h6>
+                                    <P>ETEC Júlio de Mesquita</P>
+                                    <P>Verificação emitida em jun de 2018</P>
+                                    <a href="/assets/pdfs/Certificado_Arduino.pdf" target="_blank" class="buttao">
+                                        Exibir credencial
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3zm-7 7h2v7h7v2H7v-9z" />
+                                        </svg>
+                                    </a>
+                                    <P class="subtitle">Este curso introdutório em Arduino proporcionou uma base sólida
+                                        na
+                                        programação e eletrônica, usando a plataforma Arduino. Aprendi os princípios
+                                        fundamentais da linguagem de programação Arduino e sua aplicação em projetos
+                                        eletrônicos básicos. Desenvolvi habilidades práticas para montar circuitos e
+                                        programar componentes como LEDs, sensores e motores, criando projetos
+                                        interativos
+                                        simples. O curso também incluiu a compreensão de esquemas eletrônicos e a
+                                        resolução
+                                        de problemas, preparando-me para explorar projetos mais avançados com
+                                        microcontroladores e IoT.</P>
+                                    <hr>
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </div>
                 </div>
@@ -582,37 +551,7 @@
           </div>
         </div>
       </section>
- -->
 
-    <section class="section" id="blog">
-        <div class="container">
-            <h2 class="mb-5">Últimos <span class="text-danger">Projetos</span></h2>
-            <!-- Filtro de tecnologias -->
-            <div id="technologyFilter">
-                <h3>Filtrar por Tecnologias:</h3>
-                <label><input type="checkbox" value="HTML"> HTML5 & CSS3</label><br>
-                <label><input type="checkbox" value="Javascript"> Javascript</label><br>
-                <label><input type="checkbox" value="Python"> Python</label><br>
-                <label><input type="checkbox" value="PHP"> PHP</label><br>
-                <label><input type="checkbox" value="Arduino"> Arduino</label><br>
-                <label><input type="checkbox" value="IA"> I.A.</label><br>
-                <label><input type="checkbox" value="Unity"> Unity</label><br>
-                <label><input type="checkbox" value="C#"> C#</label><br>
-                <label><input type="checkbox" value="Blender"> Blender</label><br>
-                <label><input type="checkbox" value="Design"> Design</label><br>
-                <!-- Adicione mais checkboxes conforme necessário -->
-            </div>
-
-            <div id="blog-posts" class="blog-row">
-                <!-- As postagens do blog serão geradas dinamicamente aqui -->
-            </div>
-            <div id="pagination" class="pagination">
-                <!-- Botões de paginação serão gerados aqui -->
-            </div>
-        </div>
-    </section>
-
-    <!--
     <div class="section contact" id="contact">
         <div id="map" class="map"></div>
         <div class="container">
