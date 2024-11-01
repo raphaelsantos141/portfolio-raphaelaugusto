@@ -68,6 +68,10 @@ const images = [
   '/assets/imgs/projetos/lucia/galeria/2024-10-13_10-04-19_6091.png',
   '/assets/imgs/projetos/lucia/galeria/2024-10-13_10-42-09_2555.png',
   '/assets/imgs/projetos/lucia/galeria/2024-10-17_19-40-52_9744.png',
+  '/assets/imgs/projetos/lucia/galeria/2024-11-01_18-30-47_1974.png',
+  '/assets/imgs/projetos/lucia/galeria/2024-10-21_22-31-00_1069.png',
+  '/assets/imgs/projetos/lucia/galeria/2024-11-01_18-44-15_5322.png',
+
 ];
 
 // Número de imagens por página
