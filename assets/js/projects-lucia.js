@@ -82,7 +82,7 @@ const closeModal = document.getElementById('closeModal');
 // Função para rolar suavemente até a galeria
 function smoothScrollToGallery() {
     $('html, body').animate({
-        scrollTop: $('#gallery').offset().top - 80 // Ajuste o offset conforme necessário
+        scrollTop: $('#gallery').offset().top - 200 // Ajuste o offset conforme necessário
     }, 700);
 }
 
