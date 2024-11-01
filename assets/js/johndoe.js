@@ -30,8 +30,7 @@ $(document).ready(function () {
     }
   });
 });
-
-//Blog mostrar projetos
+// Blog mostrar projetos
 const posts = [
   {
     title: "Projeto TCC - Vaso Sanitário Automatizado",
@@ -52,7 +51,7 @@ const posts = [
   {
     title: "Site Garden Ouro Fino",
     image: "assets/imgs/projetos/gardenourofino/thumb.png",
-    content: "Site Garden Ouro Fino: uma plataforma atrativa e funcional que destaca a variedade de flores e arranjos da floricultura, proporcionando uma experiência envolvente. ",
+    content: "Site Garden Ouro Fino: uma plataforma atrativa e funcional que destaca a variedade de flores e arranjos da floricultura, proporcionando uma experiência envolvente.",
     link: "/pages/00-gardenourofino.html",
     date: "2024-10-01",
     tecnologias: ["HTML", "Javascript"]
@@ -97,7 +96,14 @@ const posts = [
     date: "2024-10-24",
     tecnologias: ["Python"]
   },
-
+  {
+    title: "Projetos Displays Acrílico e MDF",
+    image: "/assets/imgs/projetos/displays/displays/2.jpg",
+    content: "Projetos que desenvolvi como desenhista técnico nas empresas de acrílico e MDF, criando desenhos e otimizando cortes para máquinas a laser.",
+    link: "/pages/00-automacao_etiquetas.html",
+    date: "2022-09-14",
+    tecnologias: ["Design", "AutoCAD"]
+  },
 ];
 
 const postsPerPage = 5; // Definindo 5 postagens por página
@@ -116,9 +122,6 @@ function filterByTechnology() {
     filteredPosts = posts.filter(post =>
       checkedTechs.every(tech => post.tecnologias.includes(tech))
     );
-  } else {
-    // Se nenhum filtro estiver selecionado, não aplicar filtragem
-    filteredPosts = posts;
   }
 
   // Ajusta a página atual se necessário
@@ -143,23 +146,22 @@ function renderPosts(filteredPosts = posts) { // Use posts filtrados ou todos
   // Renderiza as postagens na página atual
   paginatedPosts.forEach(post => {
     const postHtml = `
-           <div class="blog-card">
-               <div class="img-holder">
-                   <a href="${post.link}" target="_blank"> <img src="${post.image}" alt="${post.title}"></a>
-               </div>
-               <div class="content-holder">
-                  <h6 class="title">
-                      <a href="${post.link}" target="_blank">${post.title}</a>
-                  </h6>
-                   <p>${post.content}</p>
-                   <a href="${post.link}" target="_blank" class="read-more">Veja mais <i class="ti-angle-double-right"></i></a>
-
-                    <div class="technologies">
-        #${post.tecnologias.map(tech => `<span class="tech-tag">${tech}</span>`).join(', ')}
+      <div class="blog-card">
+          <div class="img-holder">
+              <a href="${post.link}" target="_blank"> <img src="${post.image}" alt="${post.title}"></a>
+          </div>
+          <div class="content-holder">
+              <h6 class="title">
+                  <a href="${post.link}" target="_blank">${post.title}</a>
+              </h6>
+              <p>${post.content}</p>
+              <a href="${post.link}" target="_blank" class="read-more">Veja mais <i class="ti-angle-double-right"></i></a>
+              <div class="technologies">
+                  #${post.tecnologias.map(tech => `<span class="tech-tag">${tech}</span>`).join(', ')}
+              </div>
+          </div>
       </div>
-               </div>
-           </div>
-       `;
+    `;
     blogPosts.innerHTML += postHtml;
   });
 }
@@ -182,10 +184,15 @@ function renderPagination(filteredPosts = posts) { // Use posts filtrados ou tod
       currentPage = i;
       renderPosts(filteredPosts);
       renderPagination(filteredPosts);
+      
+      // Rola para o início da seção do blog
+      const blogSection = document.getElementById('blog');
+      blogSection.scrollIntoView({ behavior: 'smooth' });
     });
     pagination.appendChild(pageButton);
   }
 }
+
 
 // Adiciona eventos de mudança para os checkboxes
 document.querySelectorAll('#technologyFilter input').forEach(checkbox => {
@@ -196,7 +203,6 @@ document.querySelectorAll('#technologyFilter input').forEach(checkbox => {
 sortPostsByDate(); // Ordena os posts por data antes de renderizar
 renderPosts();
 renderPagination();
-
 
 // portfolio filters
 $(window).on("load", function () {
@@ -221,180 +227,3 @@ $(window).on("load", function () {
     }), !1
   });
 });
-
-$(document).ready(function () {
-  const projects = [
-    {
-      img: "assets/imgs/portifolio/prog_viagens1.png",
-      title: "Programando Viagens V1",
-      desc: "Desenvolvido como parte do primeiro semestre do curso de Análise e Desenvolvimento de Sistemas, Turma A Noturno. O objetivo é criar um site para planejamento e organização de viagens.",
-      projectLink: "https://programandoviagens.vercel.app",
-      githubLink: "https://github.com/raphaelsantos141/ProgramandoViagens"
-    },
-
-    {
-      img: "assets/imgs/portifolio/acrilwoodind.png",
-      title: "Acrilwood Ind",
-      desc: "Criado como uma iniciativa pessoal para a empresa onde trabalho para colocar em prática HTML, CSS e JavaScript. A partir de um template pré-existente, explorei como cada parte funcionava e personalizei a interface para torná-la mais agradável e funcional.",
-      projectLink: "https://acrilwoodind.vercel.app",
-      githubLink: "https://github.com/raphaelsantos141/Acrilwood-Ind"
-    },
-
-
-
-    // Adicione mais projetos conforme necessário
-  ];
-
-  const projectsPerPage = 6;
-  let currentPage = 0;
-
-  function renderProjects() {
-    const start = currentPage * projectsPerPage;
-    const end = start + projectsPerPage;
-    const projectsToShow = projects.slice(start, end);
-
-    $('#portfolio-grid').empty();
-
-    projectsToShow.forEach(project => {
-      $('#portfolio-grid').append(`
-              <div class="project">
-                  <img src="${project.img}" alt="${project.title}">
-                  <div class="project-info">
-                      <h3>${project.title}</h3>
-                      <p>${project.desc}</p>
-                      <div class="project-buttons">
-                          <a href="${project.projectLink}" target="_blank" class="btn">Ver Projeto</a>
-                          <a href="${project.githubLink}" target="_blank" class="btn github"><i class="fab fa-github"></i></a>
-                      </div>
-                  </div>
-              </div>
-          `);
-    });
-  }
-
-  $('#prev-button').on('click', function () {
-    if (currentPage > 0) {
-      currentPage--;
-      renderProjects();
-    }
-  });
-
-  $('#next-button').on('click', function () {
-    if ((currentPage + 1) * projectsPerPage < projects.length) {
-      currentPage++;
-      renderProjects();
-    }
-  });
-
-  // Render initial set of projects
-  renderProjects();
-});
-
-
-
-//Imprimir Curriculo
-document.getElementById('printButton').addEventListener('click', function () {
-  // URL do PDF
-  var pdfUrl = '/assets/pdfs/Curriculo_Raphael.pdf';
-
-  // Abre o PDF em uma nova janela
-  var printWindow = window.open(pdfUrl, '_blank');
-
-  // Adiciona um evento de carregamento para acionar a impressão
-  printWindow.onload = function () {
-    printWindow.print();
-  };
-});
-
-// google maps
-function initMap() {
-  // Styles a map in night mode.
-  var map = new google.maps.Map(document.getElementById('map'), {
-    center: { lat: 40.674, lng: -73.945 },
-    zoom: 12,
-    scrollwheel: false,
-    navigationControl: false,
-    mapTypeControl: false,
-    scaleControl: false,
-    styles: [
-      { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },
-      { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
-      { elementType: 'labels.text.fill', stylers: [{ color: '#746855' }] },
-      {
-        featureType: 'administrative.locality',
-        elementType: 'labels.text.fill',
-        stylers: [{ color: '#d59563' }]
-      },
-      {
-        featureType: 'poi',
-        elementType: 'labels.text.fill',
-        stylers: [{ color: '#d59563' }]
-      },
-      {
-        featureType: 'poi.park',
-        elementType: 'geometry',
-        stylers: [{ color: '#263c3f' }]
-      },
-      {
-        featureType: 'poi.park',
-        elementType: 'labels.text.fill',
-        stylers: [{ color: '#6b9a76' }]
-      },
-      {
-        featureType: 'road',
-        elementType: 'geometry',
-        stylers: [{ color: '#38414e' }]
-      },
-      {
-        featureType: 'road',
-        elementType: 'geometry.stroke',
-        stylers: [{ color: '#212a37' }]
-      },
-      {
-        featureType: 'road',
-        elementType: 'labels.text.fill',
-        stylers: [{ color: '#9ca5b3' }]
-      },
-      {
-        featureType: 'road.highway',
-        elementType: 'geometry',
-        stylers: [{ color: '#746855' }]
-      },
-      {
-        featureType: 'road.highway',
-        elementType: 'geometry.stroke',
-        stylers: [{ color: '#1f2835' }]
-      },
-      {
-        featureType: 'road.highway',
-        elementType: 'labels.text.fill',
-        stylers: [{ color: '#f3d19c' }]
-      },
-      {
-        featureType: 'transit',
-        elementType: 'geometry',
-        stylers: [{ color: '#2f3948' }]
-      },
-      {
-        featureType: 'transit.station',
-        elementType: 'labels.text.fill',
-        stylers: [{ color: '#d59563' }]
-      },
-      {
-        featureType: 'water',
-        elementType: 'geometry',
-        stylers: [{ color: '#17263c' }]
-      },
-      {
-        featureType: 'water',
-        elementType: 'labels.text.fill',
-        stylers: [{ color: '#515c6d' }]
-      },
-      {
-        featureType: 'water',
-        elementType: 'labels.text.stroke',
-        stylers: [{ color: '#17263c' }]
-      }
-    ]
-  });
-}

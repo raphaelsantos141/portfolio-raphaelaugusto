@@ -6148,7 +6148,7 @@ input[type="button"].btn-block {
 
 /* Estilização do contêiner de filtros */
 #technologyFilter {
-  padding: 20px;
+  padding: 30px;
   background-color: #ffffff; /* Cor de fundo branca para destaque */
   border-radius: 8px; /* Bordas arredondadas */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
@@ -6156,6 +6156,7 @@ input[type="button"].btn-block {
   display: flex; /* Exibe os filtros em linha */
   flex-wrap: wrap; /* Permite que os filtros se movam para a linha seguinte se necessário */
   gap: 15px; /* Espaçamento entre os filtros */
+  justify-content: center;
 }
 
 /* Título da seção de filtros */
