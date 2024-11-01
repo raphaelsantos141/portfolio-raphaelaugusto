@@ -114,13 +114,13 @@ function sortPostsByDate() {
 }
 
 function filterByTechnology() {
-  const checkedTechs = Array.from(document.querySelectorAll('#technologyFilter input:checked'))
-    .map(checkbox => checkbox.value);
+  const selectedTechs = Array.from(document.querySelectorAll('.tech-btn.selected'))
+    .map(button => button.getAttribute('data-value'));
 
   let filteredPosts = posts;
-  if (checkedTechs.length > 0) {
+  if (selectedTechs.length > 0) {
     filteredPosts = posts.filter(post =>
-      checkedTechs.every(tech => post.tecnologias.includes(tech))
+      selectedTechs.every(tech => post.tecnologias.includes(tech))
     );
   }
 
@@ -134,6 +134,14 @@ function filterByTechnology() {
   renderPosts(filteredPosts);
   renderPagination(filteredPosts);
 }
+
+// Adiciona eventos de clique para os botões
+document.querySelectorAll('.tech-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    button.classList.toggle('selected'); // Alterna a classe 'selected' ao clicar
+    filterByTechnology(); // Filtra projetos com base nos botões selecionados
+  });
+});
 
 function renderPosts(filteredPosts = posts) { // Use posts filtrados ou todos
   const blogPosts = document.getElementById('blog-posts');
