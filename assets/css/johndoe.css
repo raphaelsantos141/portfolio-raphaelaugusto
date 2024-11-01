@@ -3263,6 +3263,7 @@ textarea.form-control.is-invalid {
 
 .btn {
   display: inline-block;
+  margin: 2px;
   font-weight: 400;
   color: #212529;
   text-align: center;
@@ -3317,13 +3318,13 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #f63750;
-  border-color: #f62b45;
+  background-color: #6c757d;
+  border-color: #6c757d;
 }
 
 .btn-primary:focus,
 .btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(249, 116, 133, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(10, 34, 53, 0.5);
 }
 
 .btn-primary.disabled,
@@ -3337,26 +3338,26 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #f62b45;
-  border-color: #f51f3a;
+  background-color: #7d6c6c;
+  border-color: #6c757d;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(249, 116, 133, 0.5);
+  box-shadow: 0 0 0 0.2rem rgb(10, 34, 53, 0.1);
 }
 
 .btn-secondary {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #49839B;
+  border-color: #49839B;
 }
 
 .btn-secondary:hover {
   color: #fff;
-  background-color: #5a6268;
-  border-color: #545b62;
+  background-color: #435f6b;
+  border-color: #435f6b;
 }
 
 .btn-secondary:focus,
@@ -13049,7 +13050,7 @@ pre .code {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 30px 0;
 }
 
 .section.bg-custom-gray {
