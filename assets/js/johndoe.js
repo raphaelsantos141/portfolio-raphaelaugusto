@@ -100,7 +100,7 @@ const posts = [
     title: "Projetos Displays Acrílico e MDF",
     image: "/assets/imgs/projetos/displays/displays/2.jpg",
     content: "Projetos que desenvolvi como desenhista técnico nas empresas de acrílico e MDF, criando desenhos e otimizando cortes para máquinas a laser.",
-    link: "/pages/00-automacao_etiquetas.html",
+    link: "/pages/00-displays.html",
     date: "2022-09-14",
     tecnologias: ["Design", "AutoCAD"]
   },
