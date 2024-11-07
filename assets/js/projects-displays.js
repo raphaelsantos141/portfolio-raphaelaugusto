@@ -37,7 +37,7 @@ $(document).ready(function () {
 const images = [
   '/assets/imgs/projetos/displays/displays/1.jpg',
 ];
-for (let i = 2; i <= 47; i++) {
+for (let i = 2; i <= 48; i++) {
     images.push(`/assets/imgs/projetos/displays/displays/${i}.jpg`);
 }
 
