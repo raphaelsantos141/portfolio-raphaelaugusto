@@ -71,7 +71,13 @@ const images = [
   '/assets/imgs/projetos/lucia/galeria/2024-11-01_18-30-47_1974.png',
   '/assets/imgs/projetos/lucia/galeria/2024-10-21_22-31-00_1069.png',
   '/assets/imgs/projetos/lucia/galeria/2024-11-01_18-44-15_5322.png',
-
+  '/assets/imgs/projetos/lucia/galeria/2024-11-12_19-27-57_2061.png',
+  '/assets/imgs/projetos/lucia/galeria/2024-11-12_19-29-44_7375.png',
+  '/assets/imgs/projetos/lucia/galeria/2024-11-12_20-01-58_8138.png',
+  '/assets/imgs/projetos/lucia/galeria/2024-11-12_21-11-18_2387.png',
+  '/assets/imgs/projetos/lucia/galeria/2024-11-12_21-30-38_5899.png',
+  '/assets/imgs/projetos/lucia/galeria/2024-11-12_21-42-52_8492.png',
+  '/assets/imgs/projetos/lucia/galeria/2024-11-12_22-17-59_3948.png',
 ];
 
 // Número de imagens por página
