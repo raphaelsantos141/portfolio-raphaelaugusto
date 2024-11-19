@@ -174,6 +174,23 @@ function renderPosts(filteredPosts = posts) { // Use posts filtrados ou todos
   });
 }
 
+// Adiciona o evento de clique para o botão "Limpar Filtros"
+document.getElementById('clear-filters').addEventListener('click', function() {
+  // Desmarca todos os checkboxes
+  document.querySelectorAll('#technologyFilter input').forEach(checkbox => {
+    checkbox.checked = false;
+  });
+
+  // Remove a classe 'selected' de todos os botões de tecnologia
+  document.querySelectorAll('.tech-btn.selected').forEach(button => {
+    button.classList.remove('selected');
+  });
+
+  // Chama a função de filtragem para exibir todos os posts novamente
+  filterByTechnology();
+});
+
+
 function renderPagination(filteredPosts = posts) { // Use posts filtrados ou todos
   const pagination = document.getElementById('pagination');
   pagination.innerHTML = ""; // Limpa a paginação atual

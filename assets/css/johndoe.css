@@ -291,8 +291,8 @@ caption {
 
 .tech-btn:hover {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #416f97;
+  border-color: #416f97;
 }
 
 #technologyFilter:hover .tech-btn {
@@ -303,6 +303,10 @@ caption {
   color: #fff;
   background-color: #6c757d;
   border-color: #6c757d;
+}
+
+#clear-filters {
+  float: left;
 }
 
 .btn-whatsapp {
@@ -417,7 +421,7 @@ caption {
 }
 
 .pagination .btn:hover {
-  background-color: rgb(10, 34, 53);
+  background-color: rgb(53, 10, 10);
   color: white;
 }
 
@@ -3518,31 +3522,31 @@ fieldset:disabled a.btn {
 .btn-warning:not(:disabled):not(.disabled).active,
 .show>.btn-warning.dropdown-toggle {
   color: #fff;
-  background-color: #ff574f;
-  border-color: #ff4b42;
+  background-color: #416f97;
+  border-color: #416f97;
 }
 
 .btn-warning:not(:disabled):not(.disabled):active:focus,
 .btn-warning:not(:disabled):not(.disabled).active:focus,
 .show>.btn-warning.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(222, 121, 117, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(22, 126, 211, 0.5);
 }
 
 .btn-danger {
   color: #fff;
-  background-color: rgb(10, 34, 53);
-  border-color: rgb(10, 34, 53);
+  background-color: #ff574f;
+  border-color: #ff574f;
 }
 
 .btn-danger:hover {
   color: #fff;
-  background-color: #f63750;
-  border-color: #f62b45;
+  background-color: #943732;
+  border-color: #943732;
 }
 
 .btn-danger:focus,
 .btn-danger.focus {
-  box-shadow: 0 0 0 0.2rem rgba(249, 116, 133, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(211, 22, 22, 0.5);
 }
 
 .btn-danger.disabled,
@@ -3556,14 +3560,14 @@ fieldset:disabled a.btn {
 .btn-danger:not(:disabled):not(.disabled).active,
 .show>.btn-danger.dropdown-toggle {
   color: #fff;
-  background-color: #f62b45;
-  border-color: #f51f3a;
+  background-color: #416f97;
+  border-color: #416f97;
 }
 
 .btn-danger:not(:disabled):not(.disabled):active:focus,
 .btn-danger:not(:disabled):not(.disabled).active:focus,
 .show>.btn-danger.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(249, 116, 133, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(22, 126, 211, 0.5);
 }
 
 .btn-light {
@@ -6087,7 +6091,8 @@ input[type="button"].btn-block {
 }
 
 .page-btn:hover {
-  background-color: rgb(71, 81, 88);
+  background-color: #416f97;
+  border-color: #416f97;
   color: #fff;
 }
 
@@ -6184,14 +6189,13 @@ input[type="button"].btn-block {
   display: flex; /* Exibe os filtros em linha */
   flex-wrap: wrap; /* Permite que os filtros se movam para a linha seguinte se necessário */
   gap: 15px; /* Espaçamento entre os filtros */
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 /* Título da seção de filtros */
 #technologyFilter h3 {
   font-size: 1.5rem; /* Tamanho da fonte */
   color: #333; /* Cor do texto */
-  margin-bottom: 15px; /* Espaçamento inferior */
   width: 100%; /* Garante que o título ocupe toda a largura disponível */
 }
 
