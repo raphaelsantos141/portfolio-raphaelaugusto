@@ -120,7 +120,7 @@ function filterByTechnology() {
   let filteredPosts = posts;
   if (selectedTechs.length > 0) {
     filteredPosts = posts.filter(post =>
-      selectedTechs.every(tech => post.tecnologias.includes(tech))
+      selectedTechs.some(tech => post.tecnologias.includes(tech))
     );
   }
 
