@@ -37,7 +37,7 @@ const posts = [
     image: "assets/imgs/projetos/vasosanitario/thumb.jpg",
     content: "Projeto final de TCC para o curso Técnico de Mecatrônica, vaso sanitário automatizado com Arduino que utiliza sensores para levantar a tampa e acionar a descarga automaticamente, proporcionando maior conveniência e higiene.",
     link: "/pages/00-vasosanitario.html",
-    date: "2018-12-01",
+    date: "2022-12-10",
     tecnologias: ["Arduino"]
   },
   {
