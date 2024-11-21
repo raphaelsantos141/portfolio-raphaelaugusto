@@ -41,7 +41,7 @@ const images = [
   '/assets/imgs/projetos/claudio9/octane1_claudio9.png',
   '/assets/imgs/projetos/claudio9/octane2_claudio9.png',
   '/assets/imgs/projetos/claudio9/octane3_claudio9.png',
-  '/assets/imgs/projetos/claudio9/octane_art_claudio9.png',
+  '/assets/imgs/projetos/claudio9/octane_art_claudio9.jpg',
   '/assets/imgs/projetos/claudio9/octane_claudio9.png',
 ];
 

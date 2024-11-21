@@ -58,7 +58,7 @@ const posts = [
   },
   {
     title: "IA: Lucia Turing",
-    image: "assets/imgs/projetos/lucia/thumb.png",
+    image: "assets/imgs/projetos/lucia/thumb.jpg",
     content: "Lucia Turing é uma personagem fictícia utilizando inteligência artificial, especificamente com a ferramenta Fooocus baseada no Stable Diffusion.",
     link: "/pages/00-lucia.html",
     date: "2013-10-18",
@@ -90,7 +90,7 @@ const posts = [
   },
   {
     title: "Automatização de Etiquetas",
-    image: "/assets/imgs/projetos/automacao_etiquetas/thumb.png",
+    image: "/assets/imgs/projetos/automacao_etiquetas/thumb.jpg",
     content: "Este projeto foi desenvolvido para automatizar o processo de criação de etiquetas no escritório onde trabalho. A necessidade surgiu a partir da demanda de colar etiquetas em caixas de displays de acrílico e MDF, otimizando o tempo e simplificando o processo para os colaboradores.",
     link: "/pages/00-automacao_etiquetas.html",
     date: "2024-10-24",
